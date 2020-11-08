@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_u3_t1_initial_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="dam.android.angelvilaplana.u3t1initialapp.U3T1InitialAppActivity"
+        app:layoutDescription="@xml/activity_u3_t1_initial_app_scene">
+
+    <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_elements"
+            android:textSize="20sp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textAlignment="center"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+            android:id="@+id/buttonIncrease1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase_one_element"
+            app:layout_constraintTop_toBottomOf="@+id/tvDisplay"
+            app:layout_constraintBottom_toTopOf="@+id/buttonIncrease2"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/tvDisplay"
+            app:layout_constraintEnd_toEndOf="@+id/tvDisplay"
+            android:layout_marginTop="25dp"/>
+    <Button
+            android:id="@+id/buttonIncrease2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/increase_two_element"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDecrease1"
+            app:layout_constraintStart_toStartOf="@+id/buttonIncrease1"
+            app:layout_constraintEnd_toEndOf="@+id/buttonIncrease1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/buttonIncrease1"/>
+    <Button
+            android:id="@+id/buttonDecrease1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_one_element"
+            app:layout_constraintBottom_toTopOf="@+id/buttonDecrease2"
+            app:layout_constraintStart_toStartOf="@+id/buttonIncrease2"
+            app:layout_constraintEnd_toEndOf="@+id/buttonIncrease2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/buttonIncrease2"/>
+    <Button
+            android:id="@+id/buttonDecrease2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decrease_two_element"
+            app:layout_constraintBottom_toTopOf="@+id/buttonReset"
+            app:layout_constraintStart_toStartOf="@+id/buttonDecrease1"
+            app:layout_constraintEnd_toEndOf="@+id/buttonDecrease1"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDecrease1"
+            app:layout_constraintHorizontal_bias="0.5"/>
+    <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reset_elements"
+            app:layout_constraintStart_toStartOf="@+id/buttonDecrease2"
+            app:layout_constraintEnd_toEndOf="@+id/buttonDecrease2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDecrease2"
+            android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

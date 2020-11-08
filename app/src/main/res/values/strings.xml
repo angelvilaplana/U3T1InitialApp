@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">U3T1InitialApp</string>
+    <string name="number_of_elements">Number of Elements</string>
+
+    <string name="increase_one_element">Increase One Elements</string>
+    <string name="increase_two_element">Increase Two Elements</string>
+    <string name="decrease_one_element">Decrease One Elements</string>
+    <string name="decrease_two_element">Decrease Two Elements</string>
+    <string name="reset_elements">Reset Elements</string>
+</resources>
